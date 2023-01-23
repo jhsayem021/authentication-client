@@ -16,8 +16,13 @@ const Allusers = () => {
     const handleDelete = user =>{
         console.log('delete user ', user.name)
         const agree = window.confirm(`Are you sure delete user: ${user.name}`)
+
         if(agree){
-            fetch(`https://mongo-server-iota.vercel.app/delete/${user._id}`,{
+            if(user.email === 'demo@demo.com'){
+                alert('Oops! You cant delete "admin user"')  //For Testing purpose, don't give to permission delete "Demo" user (Optional)
+            }
+            else{
+                fetch(`https://mongo-server-iota.vercel.app/delete/${user._id}`,{
             method: 'DELETE'
         })
         .then(res=>res.json())
@@ -28,6 +33,7 @@ const Allusers = () => {
                 setDisplayUsers(remainUsers);
             }
         })
+            }
         }
     }
     
