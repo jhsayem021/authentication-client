@@ -2,9 +2,9 @@
 
 For see admin panel
 
-use id: # admin@admin.com
+use id: admin@admin.com
 
-pass: # admin123
+pass:  admin123
 
 ### Build using:
 1.React.js
