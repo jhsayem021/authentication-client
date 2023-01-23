@@ -1,0 +1,10 @@
+
+  .btn-hide {
+    display: none;
+  }
+  
+
+  
+  .user-bg:hover .btn-hide {
+    display: block;
+  }
