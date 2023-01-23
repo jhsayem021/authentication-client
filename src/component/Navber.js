@@ -39,15 +39,15 @@ const Navber = () => {
     return (
 
        
-        <div className='flex justify-between items-start px-5 py-3'>
+        <div className='flex justify-between items-start  px-5 py-3'>
          <div>
-            <ul className='flex items-center  justify-evenly '>
+            <ul className='inline items-center  justify-evenly sm:flex'>
                 
                 
                 
                 
                 
-                {users?.role === 'admin' ? <li className='mr-3 ' > <NavLink className='me-3 bg-black text-white px-2 py-1 rounded' to='/allusers' >All users</NavLink></li> : <></> }
+                {users?.role === 'admin' ? <li className='mr-3 ' > <NavLink className='me-3 bg-black text-white px-2 py-1 rounded ' to='/allusers' >All users</NavLink></li> : <></> }
                 <li className='mr-3 ' > <NavLink className='me-3 bg-black text-white px-2 py-1 rounded' to='/' >Home</NavLink></li>
             </ul>
          </div>

@@ -35,10 +35,10 @@ const Allusers = () => {
     return (
        <>
        <Navber/>
-        <div className='mx-auto w-3/5 '>
+        <div className='mx-auto w-3/5  '>
             
             <h3 className='pt-5 text-3xl'>User List</h3>
-            <ul className='grid grid-cols-3 gap-y-7 justify-evenly users '>
+            <ul className='grid grid-cols-1 sm:grid-cols-3   gap-y-7 justify-evenly users '>
             {
                 displayUsers.map( user =><>
                 <li className='relative w-80 m-2 bg-slate-200 rounded-lg p-4 pb-12 user-bg'>
